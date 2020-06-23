@@ -1,14 +1,13 @@
-#include "mensagem.h"
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <cstring>
-#include <ctime>
-#include <sstream>
+
+#include "../include/Date.h"
+#include "../include/Time.h"
 
 using namespace std;
 
-bool data_existe() {
+bool Date::data_existe() {
   fstream arquivo;
   arquivo.open("mensagem.txt", fstream:: in | fstream::out | fstream::app);
   string message;
@@ -26,12 +25,12 @@ bool data_existe() {
   return false;
 }
 
-string format_current_date(string format) {
+string Date::format_current_date(string format) {
   time_t now = time(nullptr);
   char result[1024];
   strftime(result, sizeof(result), format.c_str(), localtime( & now));
   return string(result);
 }
-string get_current_date() {
+string Date::get_current_date() {
   return format_current_date("%d/%m/%Y");
 }
