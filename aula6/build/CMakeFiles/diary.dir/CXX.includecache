@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/projects/aula2/aula6/include/Date.h
+string
+-
+
+/root/projects/aula2/aula6/include/Diary.h
+Message.h
+/root/projects/aula2/aula6/include/Message.h
+string
+-
+
+/root/projects/aula2/aula6/include/Message.h
+string
+-
+Date.h
+/root/projects/aula2/aula6/include/Date.h
+Time.h
+/root/projects/aula2/aula6/include/Time.h
+
+/root/projects/aula2/aula6/include/Time.h
+string
+-
+
+/root/projects/aula2/aula6/src/Diary.cpp
+../include/Diary.h
+/root/projects/aula2/aula6/include/Diary.h
+../include/Message.h
+/root/projects/aula2/aula6/include/Message.h
+iostream
+-
+fstream
+-
+string
+-
+
