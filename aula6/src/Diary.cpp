@@ -1,5 +1,7 @@
 #include "../include/Diary.h"
 #include "../include/Message.h"
+#include "../include/Time.h"
+#include "../include/Date.h"
 
 #include <iostream>
 #include <fstream>
@@ -16,14 +18,17 @@ Diary::Diary(string filename)
 
 void Diary::add(string messageContent)
 {
+  Date d;
+  Time t;
   if (messages_size < messages_capacity)
   {
     Message m;
     m.content = messageContent;
+    m.date.set_from_string(d.get_current_date());
+    m.time.set_from_string(t.get_current_time());
     messages[messages_size] = m;
     messages_size++;
   }
-
   // adicionar mensagem no array de mensagens
 }
 

@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/root/projects/aula2/aula6/include/App.h
+Diary.h
+/root/projects/aula2/aula6/include/Diary.h
+string
+-
+
 /root/projects/aula2/aula6/include/Date.h
 string
 -
@@ -28,11 +34,23 @@ Time.h
 string
 -
 
+/root/projects/aula2/aula6/src/App.cpp
+iostream
+-
+string
+-
+../include/App.h
+/root/projects/aula2/aula6/include/App.h
+
 /root/projects/aula2/aula6/src/Diary.cpp
 ../include/Diary.h
 /root/projects/aula2/aula6/include/Diary.h
 ../include/Message.h
 /root/projects/aula2/aula6/include/Message.h
+../include/Time.h
+/root/projects/aula2/aula6/include/Time.h
+../include/Date.h
+/root/projects/aula2/aula6/include/Date.h
 iostream
 -
 fstream

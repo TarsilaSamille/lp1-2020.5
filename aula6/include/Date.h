@@ -9,6 +9,8 @@ struct Date
     unsigned month;
     unsigned day;
 
+    Date();
+    std::string to_string();
     void set_from_string(std::string date);
     bool data_existe();
     std::string format_current_date(std::string format);
