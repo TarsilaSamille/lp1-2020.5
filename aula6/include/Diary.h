@@ -8,6 +8,7 @@
 struct Diary
 {
     Diary(std::string filename);
+    ~Diary();
 
     std::string filename;
     Message* messages;
@@ -15,6 +16,8 @@ struct Diary
     size_t messages_capacity;
 
     void add(std::string message);
+    void add(Message m);
+    void addAll();
     void write();
 };
 #endif

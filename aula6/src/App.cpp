@@ -51,7 +51,7 @@ void App::list_messages()
 {
     for (size_t i = 0; i < diary.messages_size; ++i) {
         const Message& message = diary.messages[i];
-        cout << "-" << message.content;
+        cout << message.content << "\n";
     }
 }
 
