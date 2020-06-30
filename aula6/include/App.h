@@ -14,6 +14,8 @@ struct App
     int show_usage(std::string prog_name);
     void add();
     void add(std::string message);
+    void search();
+    void search(std::string message);
     void list_messages();
     void show_mensage(std::string message);
 };

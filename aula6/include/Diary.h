@@ -17,6 +17,7 @@ struct Diary
 
     void add(std::string message);
     void add(Message m);
+    Message* search(std::string s);
     void addAll();
     void write();
 };

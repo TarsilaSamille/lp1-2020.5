@@ -76,11 +76,12 @@ void Diary::addAll()
     }
     if (msg.rfind("#", 0) == 0)
     {
-      d.set_from_string(msg.substr(1,10));
+      d.set_from_string(msg.substr(1, 10));
       m.date = d;
       continue;
     }
-    m.content = msg.substr(10,msg.size());;
+    m.content = msg.substr(10, msg.size());
+    ;
     t.set_from_string(msg.substr(2, 10));
     m.time = t;
     add(m);
@@ -109,4 +110,18 @@ void Diary::write()
   arquivo << "- " << t.get_current_time() << " " << messages[messages_size - 1].content << "\n";
   messages_size++;
   arquivo.close();
+}
+
+Message *Diary::search(string s)
+{
+  for (size_t i = 0; i < messages_size; i++)
+  {
+    size_t found = messages[i].content.find(s);
+    if (found != string::npos)
+    {
+      return &messages[i];
+    }
+  }
+
+  return nullptr;
 }

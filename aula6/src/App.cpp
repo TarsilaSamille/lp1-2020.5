@@ -23,6 +23,12 @@ int App::run(int argc, char* argv[])
         } else {
             add(argv[2]);
         }
+    }else if (action == "search") {
+        if (argc == 2) {
+            search();
+        } else {
+            search(argv[2]);
+        }
     } else if (action == "list") {
         list_messages();
     } else {
@@ -59,8 +65,28 @@ int App::show_usage(string prog_name)
 {
   cout << "Uso: " << prog_name << " list" << "\n";
   cout << "Uso: " << prog_name << " add <mensagem>" << "\n";
+  cout << "Uso: " << prog_name << " search <mensagem>" << "\n";
   return 1;
 }
 void show_mensage(string message) {
   cout << "Mensagem adicionada:" << message << "\n";
+}
+
+void App::search()
+{
+    string message;
+    cout << "Enter your message:";
+    getline(cin, message);
+
+    add(message);
+}
+
+void App::search(string mes)
+{
+    Message* message = diary.search(mes);
+    if (message != nullptr) {
+        cout << message->content << "\n";
+    } else {
+        cout << "não existe mensagens com este termo" << "\n";
+    }
 }
