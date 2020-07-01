@@ -9,29 +9,43 @@ App::App(string filename) : diary(filename)
 {
 }
 
-int App::run(int argc, char* argv[])
+int App::run(int argc, char *argv[])
 {
-    if (argc == 1) {
+    if (argc == 1)
+    {
         return show_usage(argv[0]);
     }
 
     string action = argv[1];
 
-    if (action == "add") {
-        if (argc == 2) {
+    if (action == "add")
+    {
+        if (argc == 2)
+        {
             add();
-        } else {
+        }
+        else
+        {
             add(argv[2]);
         }
-    }else if (action == "search") {
-        if (argc == 2) {
+    }
+    else if (action == "search")
+    {
+        if (argc == 2)
+        {
             search();
-        } else {
+        }
+        else
+        {
             search(argv[2]);
         }
-    } else if (action == "list") {
+    }
+    else if (action == "list")
+    {
         list_messages();
-    } else {
+    }
+    else
+    {
         return show_usage(argv[0]);
     }
 
@@ -55,21 +69,25 @@ void App::add(const string message)
 
 void App::list_messages()
 {
-    for (size_t i = 0; i < diary.messages_size; ++i) {
-        const Message& message = diary.messages[i];
-        cout << message.content << "\n";
+    for (auto i : diary.messages)
+    {
+        cout << i.content << "\n";
     }
 }
 
 int App::show_usage(string prog_name)
 {
-  cout << "Uso: " << prog_name << " list" << "\n";
-  cout << "Uso: " << prog_name << " add <mensagem>" << "\n";
-  cout << "Uso: " << prog_name << " search <mensagem>" << "\n";
-  return 1;
+    cout << "Uso: " << prog_name << " list"
+         << "\n";
+    cout << "Uso: " << prog_name << " add <mensagem>"
+         << "\n";
+    cout << "Uso: " << prog_name << " search <mensagem>"
+         << "\n";
+    return 1;
 }
-void show_mensage(string message) {
-  cout << "Mensagem adicionada:" << message << "\n";
+void show_mensage(string message)
+{
+    cout << "Mensagem adicionada:" << message << "\n";
 }
 
 void App::search()
@@ -83,10 +101,17 @@ void App::search()
 
 void App::search(string mes)
 {
-    Message* message = diary.search(mes);
-    if (message != nullptr) {
-        cout << message->content << "\n";
-    } else {
-        cout << "não existe mensagens com este termo" << "\n";
+    vector<Message *> messagesSearch = diary.search(mes);
+    if (messagesSearch.size() > 0)
+    {
+        for (auto i : messagesSearch)
+        {
+            cout << i->content <<"\n";
+        }
+    }
+    else
+    {
+        cout << "não existe mensagens com este termo"
+             << "\n";
     }
 }

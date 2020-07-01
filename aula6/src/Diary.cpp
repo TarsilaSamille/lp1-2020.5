@@ -10,16 +10,9 @@
 using namespace std;
 
 Diary::Diary(string filename)
-    : filename(filename), messages_capacity(2), messages_size(0),
-      messages(nullptr)
+    : filename(filename)
 {
-  messages = new Message[messages_capacity];
   addAll();
-}
-
-Diary::~Diary()
-{
-  delete[] messages;
 }
 
 void Diary::add(string messageContent)
@@ -35,24 +28,7 @@ void Diary::add(string messageContent)
 
 void Diary::add(Message message)
 {
-  if (messages_size < messages_capacity)
-  {
-    messages[messages_size] = message;
-    messages_size++;
-  }
-  else
-  {
-    messages_capacity *= 2;
-    Message *new_array = new Message[messages_capacity];
-    for (size_t i = 0; i < messages_size; i++)
-    {
-      new_array[i] = messages[i];
-    }
-    delete[] messages;
-    messages = new_array;
-    messages[messages_size] = message;
-    messages_size++;
-  }
+  messages.push_back(message);
 }
 
 void Diary::addAll()
@@ -107,21 +83,20 @@ void Diary::write()
     }
     arquivo << "#" << d.get_current_date() << "\n\n";
   }
-  arquivo << "- " << t.get_current_time() << " " << messages[messages_size - 1].content << "\n";
-  messages_size++;
+  arquivo << "- " << t.get_current_time() << " " << messages[messages.size() - 1].content << "\n";
   arquivo.close();
 }
 
-Message *Diary::search(string s)
+vector<Message *> Diary::search(string s)
 {
-  for (size_t i = 0; i < messages_size; i++)
+  vector<Message *> msgs;
+  for (size_t i = 0; i < messages.size(); i++)
   {
-    size_t found = messages[i].content.find(s);
-    if (found != string::npos)
-    {
-      return &messages[i];
-    }
+      size_t found = messages[i].content.find(s);
+      if (found != string::npos)
+      {
+        msgs.push_back(&messages[i]);
+      }
   }
-
-  return nullptr;
+    return msgs;
 }
