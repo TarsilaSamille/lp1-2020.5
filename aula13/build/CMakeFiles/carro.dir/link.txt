@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall   CMakeFiles/carro.dir/Carro/carro.cpp.o CMakeFiles/carro.dir/Carro/main.cpp.o CMakeFiles/carro.dir/Carro/motor.cpp.o  -o carro 

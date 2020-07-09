@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall   CMakeFiles/main.dir/Banco/cliente.cpp.o CMakeFiles/main.dir/Banco/conta.cpp.o CMakeFiles/main.dir/Banco/main.cpp.o  -o main 

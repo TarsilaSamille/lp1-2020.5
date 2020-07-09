@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula13/Carro/carro.hpp
+string
+-
+motor.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula13/Carro/motor.hpp
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula13/Carro/main.cpp
+iostream
+-
+carro.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula13/Carro/carro.hpp
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula13/Carro/motor.hpp
+iostream
+-
+
