@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula16/include/Empresa.hpp
+string
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula16/include/Funcionario.hpp
+string
+-
+ctime
+-
+Empresa.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula16/include/Empresa.hpp
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula16/src/main.cpp
+iostream
+-
+sstream
+-
+algorithm
+-
+vector
+-
+../include/Empresa.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula16/include/Empresa.hpp
+../include/Funcionario.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula16/include/Funcionario.hpp
+

@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall   CMakeFiles/empresa.dir/src/main.cpp.o CMakeFiles/empresa.dir/src/Empresa.cpp.o CMakeFiles/empresa.dir/src/Funcionario.cpp.o  -o empresa 
