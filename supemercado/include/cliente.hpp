@@ -1,9 +1,10 @@
 #ifndef CLIENTE
 #define CLIENTE
 #include "produto.hpp"
+#include "vector_supemercado.hpp"
 
 #include <string>
-#include <vector>
+
 using namespace std;
 
 class cliente{
@@ -11,7 +12,7 @@ class cliente{
     int codigo;
     string nome;
     double saldo;
-    vector <produto> sacola;
+    vector_supemercado <produto> sacola;
     static int quantidadeClientes;
 
     cliente(string nome, double saldo);

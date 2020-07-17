@@ -28,7 +28,7 @@ cliente::~cliente()
 void cliente::compra(produto &p)
 {
     if(saldo >= p.preco){
-        sacola.push_back(p);
+        sacola.push(p);
         saldo -= p.preco;
     }else{
         cout << "sem dinheiro pra comprar " << p.nome << endl;
@@ -36,9 +36,9 @@ void cliente::compra(produto &p)
 }
 void cliente::verSacola()
 {
-    for (auto i : sacola)
+    for (auto i : sacola.getElements())
     {
-        cout << i.codigo << "-" << i.nome << "-R$" << i.preco<< "\n";
+       cout << i.codigo << "-" << i.nome << "-R$" << i.preco<< "\n";
     }
 }
 void cliente::registro()

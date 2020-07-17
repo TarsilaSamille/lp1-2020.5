@@ -7,11 +7,12 @@
 #include <algorithm>
 
 #include "../include/app.hpp"
+#include "../include/fornecedor.hpp"
 #include "../include/cliente.hpp"
 
 using namespace std;
 
-app::app(string estoque, string caixa) : supemercado(estoque, caixa)
+app::app(string estoque, string caixa, string fornecedorFilename) : supemercado(estoque, caixa), fornecedorS(fornecedorFilename)
 {
 }
 
@@ -33,7 +34,7 @@ int app::run(int argc, char *argv[])
 }
 void app::menu()
 {
-    string nome, saldo, cod;
+    string nome, saldo, cod, quantidade;
     cout << "cliente\nnome:";
     getline(cin, nome);
     cout << "saldo:";
@@ -47,8 +48,10 @@ void app::menu()
         cout << "1) Listar produtos supemercado\n";
         cout << "2) Adicionar produto a sacola\n";
         cout << "3) Listar produtos sacola\n";
-        cout << "4) Adicionar saldo\n";
-        cout << "5) Ver saldo\n";
+        cout << "4) Listar produtos fornecedor\n";
+        cout << "5) Reabasticer o estoque do estabelecimento\n";
+        cout << "6) Adicionar saldo\n";
+        cout << "7) Ver saldo\n";
         cout << "0) Finalizar\n";
         getline(cin, opt);
         if (opt == "2")
@@ -66,8 +69,9 @@ void app::menu()
 
             for (auto nome : nomes)
             {
-                produto ptr = *supemercado.venda(nome);
-                if(ptr.nome != "") c.compra(ptr);
+                produto ptr = supemercado.venda(nome);
+                if (ptr.nome != "")
+                    c.compra(ptr);
             }
         }
         else if (opt == "1")
@@ -80,11 +84,24 @@ void app::menu()
         }
         else if (opt == "4")
         {
+            fornecedorS.listarProdutos();
+        }
+        else if (opt == "5")
+        {
+            cout << "produto\nnome:";
+            getline(cin, nome);
+            cout << "quantidade:";
+            getline(cin, quantidade);
+            cod.erase(std::remove_if(cod.begin(), cod.end(), ::isspace), cod.end());
+            supemercado.reabastecer(fornecedorS.repassarProdutos(nome, atoi(quantidade.c_str())));
+        }
+        else if (opt == "6")
+        {
             cout << "saldo:";
             getline(cin, saldo);
             c.saldo = atoi(saldo.c_str());
         }
-        else if (opt == "5")
+        else if (opt == "7")
         {
             cout << "saldo:R$" << c.saldo << endl;
         }

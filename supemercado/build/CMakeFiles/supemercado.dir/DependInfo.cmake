@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/app.cpp" "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/build/CMakeFiles/supemercado.dir/src/app.cpp.o"
   "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/cliente.cpp" "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/build/CMakeFiles/supemercado.dir/src/cliente.cpp.o"
   "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/estabelecimento.cpp" "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/build/CMakeFiles/supemercado.dir/src/estabelecimento.cpp.o"
+  "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/fornecedor.cpp" "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/build/CMakeFiles/supemercado.dir/src/fornecedor.cpp.o"
   "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/main.cpp" "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/build/CMakeFiles/supemercado.dir/src/main.cpp.o"
   "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/produto.cpp" "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/build/CMakeFiles/supemercado.dir/src/produto.cpp.o"
   )

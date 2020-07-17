@@ -8,10 +8,11 @@
 #include <iomanip>
 #include <cstring>
 #include <regex>
+#include <vector>
 
 int estabelecimento::quantidadeContas;
 
-estabelecimento::estabelecimento(string estoque,string caixa)
+estabelecimento::estabelecimento(string estoque, string caixa)
     : estoque(estoque), caixa(caixa)
 {
   addAll();
@@ -21,21 +22,20 @@ estabelecimento::~estabelecimento()
 {
   escreverEstoque();
 }
-void estabelecimento::gerarCaixa()
-{
-  addAllCaixa();
-  double totalGeral = 0, total = 0;
+// void estabelecimento::gerarCaixa()
+// {
+//   addAllCaixa();
+//   double totalGeral = 0, total = 0;
+//   for (auto produto : produtosVendidos)
+//   {
+//     total = produto.quantidadeVendida * produto.preco;
+//     totalGeral += total;
+//     if (produto.quantidadeVendida > 0)
+//       cout << produto.codigo << "-" << produto.nome << "-R$" << produto.preco << "-" << produto.quantidadeVendida << "-" << total << "\n";
+//   }
 
-  for (auto produto : produtosVendidos)
-  {
-    total = produto.quantidadeVendida * produto.preco;
-    totalGeral += total;
-    if (produto.quantidadeVendida > 0)
-      cout << produto.codigo << "-" << produto.nome << "-R$" << produto.preco << "-" << produto.quantidadeVendida << "-" << total << "\n";
-  }
-
-  cout << ",,,TOTAL GERAL:,R$" << totalGeral;
-}
+//   cout << ",,,TOTAL GERAL:,R$" << totalGeral;
+// }
 
 void estabelecimento::escreverEstoque()
 {
@@ -63,42 +63,45 @@ void estabelecimento::escreverEstoque()
   arquivo.close();
 }
 
-
-produto *estabelecimento::venda(string nome)
+produto estabelecimento::venda(string nome)
 {
   for (size_t i = 0; i < produtos.size(); i++)
   {
-    if (compare(produtos[i].nome, nome))
+    if (compare(produtos.at(i).nome, nome))
     {
-      if (produtos[i].quantidadeEstoque > 0)
+      if (produtos.at(i).quantidadeEstoque > 0)
       {
-        return venda(produtos[i].codigo);
-      }else {
-          cout << nome << " sem estoque\n";
-          return new produto();
+        return venda(produtos.at(i).codigo);
+      }
+      else
+      {
+        cout << nome << " sem estoque\n";
+        return produto();
       }
     }
   }
   cout << nome << " nome invalido\n";
-  return new produto();
+  return produto();
 }
 
-produto *estabelecimento::venda(int codigo)
+produto estabelecimento::venda(int codigo)
 {
-  produto *pdt;
+  produto pdt;
   for (size_t i = 0; i < produtos.size(); i++)
   {
-    if (produtos[i].codigo == codigo)
+    if (produtos.at(i).codigo == codigo)
     {
-      pdt = &produtos[i];
-      if (pdt->quantidadeEstoque > 0)
+      pdt = produtos.at(i);
+      if (pdt.quantidadeEstoque > 0)
       {
-        pdt->quantidadeEstoque--;
-        pdt->quantidadeVendida++;
+        vector<produto> v = produtos.getElements();
+        v[i].quantidadeEstoque--;
+        v[i].quantidadeVendida++;
+        produtos.setElements(v);
       }
     }
   }
-  escrever(*pdt);
+  escrever(pdt);
   return pdt;
 }
 
@@ -106,13 +109,14 @@ void estabelecimento::listar()
 {
   for (auto i : produtos)
   {
-    if(i.quantidadeEstoque > 0) cout << i.codigo << "-" << i.nome << "-R$" << i.preco<< "\n";
+    if (i.quantidadeEstoque > 0)
+      cout << i.codigo << "-" << i.nome << "-R$" << i.preco << "-" << i.quantidadeEstoque << " " << i.unidadeMedida << "\n";
   }
 }
 
 void estabelecimento::add(produto p)
 {
-  produtos.push_back(p);
+  produtos.push(p);
 }
 
 void estabelecimento::addAll()
@@ -159,6 +163,7 @@ void estabelecimento::addAll()
 
 void estabelecimento::addAllCaixa()
 {
+  produtosVendidos = {};
   fstream arquivo;
   arquivo.open(caixa);
   if (!arquivo.is_open())
@@ -190,7 +195,7 @@ void estabelecimento::addAllCaixa()
       p.codigo = atoi(cod.c_str());
       p.quantidadeVendida = atoi(quantidade.c_str());
       p.preco = atof(pr.substr(2, pr.size()).c_str());
-      produtosVendidos.push_back(p);
+      produtosVendidos.push(p);
     }
     if (msg.rfind(",", 0) == 0)
     {
@@ -199,7 +204,6 @@ void estabelecimento::addAllCaixa()
   }
   arquivo.close();
 }
-
 
 void estabelecimento::escrever(produto p)
 {
@@ -211,7 +215,6 @@ void estabelecimento::escrever(produto p)
   }
 
   arquivo << "CODIGO,PRODUTO,PREÇO,QUANTIDADE VENDIDA,TOTAL\n";
-  produtosVendidos = {};
   addAllCaixa();
   double totalGeral = 0, total = 0;
   bool jaFoiVendido = false;
@@ -219,39 +222,79 @@ void estabelecimento::escrever(produto p)
   produto produtoJaVendido;
   if (produtosVendidos.size() > 0)
   {
-    for (auto produto : produtosVendidos)
+    for (size_t i = 0; i < produtosVendidos.size(); i++)
     {
       position++;
-      if (p.codigo == produto.codigo)
+      if (p.codigo == produtosVendidos.at(i).codigo)
       {
-        produto.quantidadeVendida = produto.quantidadeVendida + 1;
+        vector<produto> v = produtosVendidos.getElements();
+        v[i].quantidadeVendida++;
+        produtosVendidos.setElements(v);
         jaFoiVendido = true;
-        produtoJaVendido = produto;
+        produtoJaVendido = produtosVendidos.at(i);
         break;
       }
     }
     if (jaFoiVendido)
     {
-      produtosVendidos.erase(produtosVendidos.begin() + position);
-      produtosVendidos.push_back(produtoJaVendido);
+      cout << position <<"aaaaaqui\n";
+        for (auto produto : produtosVendidos)
+  {
+    cout << position<<produto.codigo << "," << produto.nome << ",R$" << produto.preco << "," << produto.quantidadeVendida << "," << total << "\n";
+  }
+      vector<produto> v = produtosVendidos.getElements();
+      v.erase(produtosVendidos.getElements().begin() + position);    
+      produtosVendidos.setElements(v);
+      produtosVendidos.push(produtoJaVendido);
+    cout << "aaaaaaaaaaaaaaaaaa" << "\n";
+
+        for (auto produto : produtosVendidos)
+  {
+    cout << produto.codigo << "," << produto.nome << ",R$" << produto.preco << "," << produto.quantidadeVendida << "," << total << "\n";
+  }
     }
   }
   if (!jaFoiVendido)
   {
-    produtosVendidos.push_back(p);
+    p.quantidadeVendida++;
+    produtosVendidos.push(p);
   }
   sort(produtosVendidos.begin(), produtosVendidos.end(), ordenaPorCodigo);
+    cout << "aaaaaaaaaaaaaaaaaa" << "\n";
+
+  for (auto produto : produtosVendidos)
+  {
+    cout << produto.codigo << "," << produto.nome << ",R$" << produto.preco << "," << produto.quantidadeVendida << "," << total << "\n";
+  }
+
   for (auto produto : produtosVendidos)
   {
     total = produto.quantidadeVendida * produto.preco;
     totalGeral += total;
-    if (produto.quantidadeVendida > 0)
-      arquivo << produto.codigo << "," << produto.nome << ",R$" << produto.preco << "," << produto.quantidadeVendida << "," << total << "\n";
+    arquivo << produto.codigo << "," << produto.nome << ",R$" << produto.preco << "," << produto.quantidadeVendida << "," << total << "\n";
   }
 
   arquivo << ",,,TOTAL GERAL:,R$" << totalGeral;
 
+  cout << ",,,TOTAL GERAL:,R$" << totalGeral;
+
+
   arquivo.close();
+  escreverEstoque();
+}
+
+void estabelecimento::reabastecer(produto pdtNovo)
+{
+  for (size_t i = 0; i < produtos.size(); i++)
+  {
+    if (compare(produtos.at(i).nome, pdtNovo.nome))
+    {
+      vector<produto> v = produtos.getElements();
+      v[i].quantidadeEstoque += pdtNovo.quantidadeEstoque;
+      produtos.setElements(v);
+    }
+  }
+  escreverEstoque();
 }
 
 bool estabelecimento::ordenaPorCodigo(produto a, produto b)
@@ -261,21 +304,21 @@ bool estabelecimento::ordenaPorCodigo(produto a, produto b)
 
 bool estabelecimento::compare(string s1, string s2)
 {
-    string comAcentos = "ÁÂÀÃáâàãÉÊÈéêèÍÎÌíîìÓÔÒÕóôòõÚÛúûùÇç";
-    string semAcentos = "AAAAaaaaEEEeeeIIIiiiOOOOooooUUuuuCc";
-    for (int i = 0; i < (int)comAcentos.length(); i++)
-    {
-        replace(s1.begin(), s1.end(),comAcentos[i], semAcentos[i]);
-        replace(s2.begin(), s2.end(),comAcentos[i], semAcentos[i]);
-        break;
-    }
+  string comAcentos = "ÁÂÀÃáâàãÉÊÈéêèÍÎÌíîìÓÔÒÕóôòõÚÛúûùÇç";
+  string semAcentos = "AAAAaaaaEEEeeeIIIiiiOOOOooooUUuuuCc";
+  for (int i = 0; i < (int)comAcentos.length(); i++)
+  {
+    replace(s1.begin(), s1.end(), comAcentos[i], semAcentos[i]);
+    replace(s2.begin(), s2.end(), comAcentos[i], semAcentos[i]);
+    break;
+  }
 
-    for (int i = 0; i < (int)comAcentos.length(); i++)
-    {
-        s1.erase(remove(s1.begin(), s1.end(), comAcentos[i]), s1.end()); 
-        s2.erase(remove(s2.begin(), s2.end(), comAcentos[i]), s2.end()); 
-    }
-    transform(s1.begin(), s1.end(), s1.begin(), ::toupper);
-    transform(s2.begin(), s2.end(), s2.begin(), ::toupper);
-    return s1 == s2 ;
+  for (int i = 0; i < (int)comAcentos.length(); i++)
+  {
+    s1.erase(remove(s1.begin(), s1.end(), comAcentos[i]), s1.end());
+    s2.erase(remove(s2.begin(), s2.end(), comAcentos[i]), s2.end());
+  }
+  transform(s1.begin(), s1.end(), s1.begin(), ::toupper);
+  transform(s2.begin(), s2.end(), s2.begin(), ::toupper);
+  return s1 == s2;
 }

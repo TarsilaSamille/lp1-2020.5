@@ -15,10 +15,13 @@ add_executable( supemercado
                 src/cliente.cpp
                 src/estabelecimento.cpp
                 src/produto.cpp
+                src/fornecedor.cpp
                 include/app.hpp
                 include/cliente.hpp
                 include/estabelecimento.hpp
-                include/produto.hpp)
+                include/produto.hpp
+                include/fornecedor.hpp
+                include/vector_supemercado.hpp)
 
 # define C++11 standard
 set_property(TARGET supemercado PROPERTY CXX_STANDARD 11)

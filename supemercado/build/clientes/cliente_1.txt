@@ -1,4 +1,7 @@
-10-Macaxeira-R$4.5
-TOTAL GERAL:R$4.5
-SALDO:R$5.5
-NOME:tesr
+6-Farinha-R$2.8
+3-Fubá-R$2.9
+2-Arroz-R$3.4
+6-Farinha-R$2.8
+TOTAL GERAL:R$11.9
+SALDO:R$0.1
+NOME:dwe

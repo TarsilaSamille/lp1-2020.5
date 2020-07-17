@@ -204,6 +204,33 @@ src/estabelecimento.cpp.s:
 	$(MAKE) -f CMakeFiles/supemercado.dir/build.make CMakeFiles/supemercado.dir/src/estabelecimento.cpp.s
 .PHONY : src/estabelecimento.cpp.s
 
+src/fornecedor.o: src/fornecedor.cpp.o
+
+.PHONY : src/fornecedor.o
+
+# target to build an object file
+src/fornecedor.cpp.o:
+	$(MAKE) -f CMakeFiles/supemercado.dir/build.make CMakeFiles/supemercado.dir/src/fornecedor.cpp.o
+.PHONY : src/fornecedor.cpp.o
+
+src/fornecedor.i: src/fornecedor.cpp.i
+
+.PHONY : src/fornecedor.i
+
+# target to preprocess a source file
+src/fornecedor.cpp.i:
+	$(MAKE) -f CMakeFiles/supemercado.dir/build.make CMakeFiles/supemercado.dir/src/fornecedor.cpp.i
+.PHONY : src/fornecedor.cpp.i
+
+src/fornecedor.s: src/fornecedor.cpp.s
+
+.PHONY : src/fornecedor.s
+
+# target to generate assembly for a file
+src/fornecedor.cpp.s:
+	$(MAKE) -f CMakeFiles/supemercado.dir/build.make CMakeFiles/supemercado.dir/src/fornecedor.cpp.s
+.PHONY : src/fornecedor.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -276,6 +303,9 @@ help:
 	@echo "... src/estabelecimento.o"
 	@echo "... src/estabelecimento.i"
 	@echo "... src/estabelecimento.s"
+	@echo "... src/fornecedor.o"
+	@echo "... src/fornecedor.i"
+	@echo "... src/fornecedor.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

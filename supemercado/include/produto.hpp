@@ -14,6 +14,7 @@ class produto{
     int quantidadeVendida;
 
     produto(string nome, int codigo, string unidadeMedida, double preco,int quantidadeEstoque, int quantidadeVendida);
+    produto(string nome, int quantidadeEstoque);
     produto();
     ~produto();
 };
