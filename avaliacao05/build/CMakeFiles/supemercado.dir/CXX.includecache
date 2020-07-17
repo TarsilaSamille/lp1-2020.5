@@ -1,0 +1,140 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/app.hpp
+estabelecimento.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/estabelecimento.hpp
+fornecedor.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/fornecedor.hpp
+string
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/cliente.hpp
+produto.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/produto.hpp
+vector_supemercado.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/vector_supemercado.hpp
+string
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/estabelecimento.hpp
+cliente.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/cliente.hpp
+produto.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/produto.hpp
+vector_supemercado.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/vector_supemercado.hpp
+string
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/fornecedor.hpp
+produto.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/produto.hpp
+estabelecimento.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/estabelecimento.hpp
+vector_supemercado.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/vector_supemercado.hpp
+string
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/produto.hpp
+string
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/vector_supemercado.hpp
+iostream
+-
+vector
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/src/app.cpp
+iostream
+-
+string
+-
+sstream
+-
+iostream
+-
+vector
+-
+cctype
+-
+algorithm
+-
+../include/app.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/app.hpp
+../include/fornecedor.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/fornecedor.hpp
+../include/cliente.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/cliente.hpp
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/src/cliente.cpp
+../include/cliente.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/cliente.hpp
+../include/produto.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/produto.hpp
+iostream
+-
+fstream
+-
+sstream
+-
+cstring
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/src/estabelecimento.cpp
+../include/estabelecimento.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/estabelecimento.hpp
+../include/produto.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/produto.hpp
+iostream
+-
+fstream
+-
+sstream
+-
+algorithm
+-
+iomanip
+-
+cstring
+-
+regex
+-
+vector
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/src/fornecedor.cpp
+../include/fornecedor.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/fornecedor.hpp
+../include/produto.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/produto.hpp
+iostream
+-
+fstream
+-
+sstream
+-
+algorithm
+-
+iomanip
+-
+cstring
+-
+regex
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/src/main.cpp
+../include/app.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/app.hpp
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/src/produto.cpp
+../include/produto.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/avaliacao05/include/produto.hpp
+
