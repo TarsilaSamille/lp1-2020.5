@@ -235,24 +235,6 @@ void estabelecimento::escrever(produto p)
         break;
       }
     }
-    if (jaFoiVendido)
-    {
-      cout << position <<"aaaaaqui\n";
-        for (auto produto : produtosVendidos)
-  {
-    cout << position<<produto.codigo << "," << produto.nome << ",R$" << produto.preco << "," << produto.quantidadeVendida << "," << total << "\n";
-  }
-      vector<produto> v = produtosVendidos.getElements();
-      v.erase(produtosVendidos.getElements().begin() + position);    
-      produtosVendidos.setElements(v);
-      produtosVendidos.push(produtoJaVendido);
-    cout << "aaaaaaaaaaaaaaaaaa" << "\n";
-
-        for (auto produto : produtosVendidos)
-  {
-    cout << produto.codigo << "," << produto.nome << ",R$" << produto.preco << "," << produto.quantidadeVendida << "," << total << "\n";
-  }
-    }
   }
   if (!jaFoiVendido)
   {
@@ -260,12 +242,6 @@ void estabelecimento::escrever(produto p)
     produtosVendidos.push(p);
   }
   sort(produtosVendidos.begin(), produtosVendidos.end(), ordenaPorCodigo);
-    cout << "aaaaaaaaaaaaaaaaaa" << "\n";
-
-  for (auto produto : produtosVendidos)
-  {
-    cout << produto.codigo << "," << produto.nome << ",R$" << produto.preco << "," << produto.quantidadeVendida << "," << total << "\n";
-  }
 
   for (auto produto : produtosVendidos)
   {
@@ -275,9 +251,6 @@ void estabelecimento::escrever(produto p)
   }
 
   arquivo << ",,,TOTAL GERAL:,R$" << totalGeral;
-
-  cout << ",,,TOTAL GERAL:,R$" << totalGeral;
-
 
   arquivo.close();
   escreverEstoque();

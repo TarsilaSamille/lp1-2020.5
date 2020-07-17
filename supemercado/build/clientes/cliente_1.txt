@@ -1,7 +1,9 @@
-6-Farinha-R$2.8
+16-Peixe-R$12.45
+17-Margarina-R$2.99
+15-Salsicha-R$8.49
+14-Carne-R$24.92
 3-Fubá-R$2.9
-2-Arroz-R$3.4
-6-Farinha-R$2.8
-TOTAL GERAL:R$11.9
-SALDO:R$0.1
-NOME:dwe
+10-Macaxeira-R$4.5
+TOTAL GERAL:R$56.25
+SALDO:R$1174.75
+NOME:wrq
