@@ -1,0 +1,164 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/agencia.hpp
+string
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/app.hpp
+banco.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/banco.hpp
+string
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/banco.hpp
+vector
+-
+conta.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/conta.hpp
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/caixa.hpp
+funcionario.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/funcionario.hpp
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/cliente.hpp
+string
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/clientePF.hpp
+string
+-
+cliente.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/cliente.hpp
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/clientePJ.hpp
+cliente.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/cliente.hpp
+string
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/conta.hpp
+string
+-
+iostream
+-
+cstdlib
+-
+agencia.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/agencia.hpp
+cliente.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/cliente.hpp
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/fila.hpp
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/funcionario.hpp
+string
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/gerente.hpp
+funcionario.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/funcionario.hpp
+string
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/seguranca.hpp
+funcionario.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/funcionario.hpp
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/src/agencia.cpp
+../include/agencia.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/agencia.hpp
+iostream
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/src/app.cpp
+../include/app.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/app.hpp
+../include/banco.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/banco.hpp
+iostream
+-
+string
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/src/banco.cpp
+../include/banco.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/banco.hpp
+vector
+-
+iostream
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/src/caixa.cpp
+../include/caixa.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/caixa.hpp
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/src/cliente.cpp
+../include/cliente.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/cliente.hpp
+iostream
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/src/clientePF.cpp
+../include/clientePF.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/clientePF.hpp
+iostream
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/src/clientePJ.cpp
+../include/clientePJ.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/clientePJ.hpp
+iostream
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/src/conta.cpp
+iostream
+-
+../include/conta.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/conta.hpp
+../include/agencia.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/agencia.hpp
+../include/cliente.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/cliente.hpp
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/src/fila.cpp
+iostream
+-
+string
+-
+../include/cliente.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/cliente.hpp
+../include/clientePJ.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/clientePJ.hpp
+../include/fila.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/fila.hpp
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/src/funcionario.cpp
+../include/funcionario.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/funcionario.hpp
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/src/gerente.cpp
+../include/gerente.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/gerente.hpp
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/src/main.cpp
+iostream
+-
+../include/app.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/app.hpp
+../include/clientePF.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/clientePF.hpp
+../include/fila.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/fila.hpp
+../include/clientePJ.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/clientePJ.hpp
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/src/seguranca.cpp
+../include/seguranca.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/seguranca.hpp
+

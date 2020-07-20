@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/app.hpp
+estabelecimento.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/estabelecimento.hpp
+fornecedor.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/fornecedor.hpp
+string
+-
+
 /home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/cliente.hpp
 produto.hpp
 /home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/produto.hpp
@@ -24,6 +32,16 @@ vector_supemercado.hpp
 string
 -
 
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/fornecedor.hpp
+produto.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/produto.hpp
+estabelecimento.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/estabelecimento.hpp
+vector_supemercado.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/vector_supemercado.hpp
+string
+-
+
 /home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/produto.hpp
 string
 -
@@ -32,6 +50,42 @@ string
 iostream
 -
 vector
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/app.cpp
+iostream
+-
+string
+-
+sstream
+-
+iostream
+-
+vector
+-
+cctype
+-
+algorithm
+-
+../include/app.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/app.hpp
+../include/fornecedor.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/fornecedor.hpp
+../include/cliente.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/cliente.hpp
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/cliente.cpp
+../include/cliente.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/cliente.hpp
+../include/produto.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/produto.hpp
+iostream
+-
+fstream
+-
+sstream
+-
+cstring
 -
 
 /home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/estabelecimento.cpp
@@ -55,4 +109,32 @@ regex
 -
 vector
 -
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/fornecedor.cpp
+../include/fornecedor.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/fornecedor.hpp
+../include/produto.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/produto.hpp
+iostream
+-
+fstream
+-
+sstream
+-
+algorithm
+-
+iomanip
+-
+cstring
+-
+regex
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/main.cpp
+../include/app.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/app.hpp
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/produto.cpp
+../include/produto.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/produto.hpp
 

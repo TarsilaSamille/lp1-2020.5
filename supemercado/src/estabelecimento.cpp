@@ -279,6 +279,8 @@ bool estabelecimento::compare(string s1, string s2)
 {
   string comAcentos = "ÁÂÀÃáâàãÉÊÈéêèÍÎÌíîìÓÔÒÕóôòõÚÛúûùÇç";
   string semAcentos = "AAAAaaaaEEEeeeIIIiiiOOOOooooUUuuuCc";
+  s1.erase(std::remove_if(s1.begin(), s1.end(), ::isspace), s1.end());
+  s2.erase(std::remove_if(s2.begin(), s2.end(), ::isspace), s2.end());
   for (int i = 0; i < (int)comAcentos.length(); i++)
   {
     replace(s1.begin(), s1.end(), comAcentos[i], semAcentos[i]);

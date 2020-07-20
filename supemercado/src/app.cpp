@@ -53,6 +53,7 @@ void app::menu()
         cout << "6) Adicionar saldo\n";
         cout << "7) Ver saldo\n";
         cout << "0) Finalizar\n";
+        cout << "opção:";
         getline(cin, opt);
         if (opt == "2")
         {
