@@ -1,0 +1,74 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/app.hpp
+restaurante.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/restaurante.hpp
+supermercado.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/supermercado.hpp
+fornecedor.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/fornecedor.hpp
+string
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/cliente.hpp
+produto.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/produto.hpp
+vector_supemercado.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/vector_supemercado.hpp
+string
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/estabelecimento.hpp
+cliente.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/cliente.hpp
+produto.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/produto.hpp
+vector_supemercado.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/vector_supemercado.hpp
+string
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/fornecedor.hpp
+produto.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/produto.hpp
+estabelecimento.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/estabelecimento.hpp
+vector_supemercado.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/vector_supemercado.hpp
+string
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/produto.hpp
+string
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/restaurante.hpp
+string
+-
+estabelecimento.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/estabelecimento.hpp
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/supermercado.hpp
+string
+-
+estabelecimento.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/estabelecimento.hpp
+fornecedor.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/fornecedor.hpp
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/vector_supemercado.hpp
+iostream
+-
+vector
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/main.cpp
+../include/app.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include/app.hpp
+

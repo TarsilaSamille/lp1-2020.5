@@ -1,9 +1,9 @@
+#include "../include/fila.hpp"
 #include <iostream>
 #include <string>
 #include "../include/cliente.hpp"
 #include "../include/clientePJ.hpp"
-#include "../include/fila.hpp"
-
+#include "../include/clientePF.hpp"
 using namespace std;
 
 template<class T>
@@ -98,7 +98,7 @@ void fila<T>::imprime()
         for(int i=0; i<cont; i++)
         {
            cout << "posi " << (primeiro+i)%tamanho << ": " << endl;
-           cout << clientes[(i+primeiro)%tamanho] << endl << endl;
+           cout << clientes[(i+primeiro)%tamanho] << endl;
         }
     }
         
@@ -109,3 +109,6 @@ template class fila<int>;
 template class fila<float>;
 template class fila <double>;
 template class fila<string>;
+// template class fila<cliente>;
+// template class fila<clientePJ>;
+// template class fila<clientePF>;

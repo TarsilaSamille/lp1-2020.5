@@ -38,6 +38,7 @@ CMakeFiles/banco.dir/src/conta.cpp.o: ../include/conta.hpp
 CMakeFiles/banco.dir/src/conta.cpp.o: ../src/conta.cpp
 
 CMakeFiles/banco.dir/src/fila.cpp.o: ../include/cliente.hpp
+CMakeFiles/banco.dir/src/fila.cpp.o: ../include/clientePF.hpp
 CMakeFiles/banco.dir/src/fila.cpp.o: ../include/clientePJ.hpp
 CMakeFiles/banco.dir/src/fila.cpp.o: ../include/fila.hpp
 CMakeFiles/banco.dir/src/fila.cpp.o: ../src/fila.cpp

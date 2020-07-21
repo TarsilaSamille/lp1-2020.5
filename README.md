@@ -29,3 +29,10 @@ cmake -S . -Bbuild
 cd build 
 make
 ./empresa
+
+
+cd ..
+cmake -S . -Bbuild
+cd build 
+make
+./estabelecimento
