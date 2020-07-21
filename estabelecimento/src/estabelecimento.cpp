@@ -9,9 +9,9 @@
 #include <cstring>
 #include <regex>
 #include <vector>
+using namespace std;
 
 int estabelecimento::quantidadeContas;
-using namespace std;
 
 estabelecimento::estabelecimento(string caixa)
     :caixa(caixa)

@@ -10,6 +10,8 @@ supermercado::supermercado(string estoque, string caixa, string fornecedorF)
  : estabelecimento(caixa), fornecedorS(fornecedorF), estoque(estoque)
 {
   addAll();
+  cout<<"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+  listar();
 }
 supermercado::supermercado(string caixa, string fornecedorF) : estabelecimento(caixa), fornecedorS(fornecedorF)
 {
@@ -58,7 +60,7 @@ void supermercado::addAll()
   arquivo.open(estoque);
   if (!arquivo.is_open())
   {
-    cerr << "Arquivo não existente ou sem permissão";
+    cerr << "Arquivo não existente ou sem permissão ESTOQUE";
   }
   produto p;
 

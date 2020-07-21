@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado"
+CMAKE_SOURCE_DIR = "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/build"
+CMAKE_BINARY_DIR = "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/estabelecimento.dir/depend.make
@@ -59,107 +59,107 @@ include CMakeFiles/estabelecimento.dir/flags.make
 
 CMakeFiles/estabelecimento.dir/src/main.cpp.o: CMakeFiles/estabelecimento.dir/flags.make
 CMakeFiles/estabelecimento.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/estabelecimento.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/estabelecimento.dir/src/main.cpp.o -c "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/estabelecimento.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/estabelecimento.dir/src/main.cpp.o -c "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/src/main.cpp"
 
 CMakeFiles/estabelecimento.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/estabelecimento.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/main.cpp" > CMakeFiles/estabelecimento.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/src/main.cpp" > CMakeFiles/estabelecimento.dir/src/main.cpp.i
 
 CMakeFiles/estabelecimento.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/estabelecimento.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/main.cpp" -o CMakeFiles/estabelecimento.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/src/main.cpp" -o CMakeFiles/estabelecimento.dir/src/main.cpp.s
 
 CMakeFiles/estabelecimento.dir/src/app.cpp.o: CMakeFiles/estabelecimento.dir/flags.make
 CMakeFiles/estabelecimento.dir/src/app.cpp.o: ../src/app.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/estabelecimento.dir/src/app.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/estabelecimento.dir/src/app.cpp.o -c "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/app.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/estabelecimento.dir/src/app.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/estabelecimento.dir/src/app.cpp.o -c "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/src/app.cpp"
 
 CMakeFiles/estabelecimento.dir/src/app.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/estabelecimento.dir/src/app.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/app.cpp" > CMakeFiles/estabelecimento.dir/src/app.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/src/app.cpp" > CMakeFiles/estabelecimento.dir/src/app.cpp.i
 
 CMakeFiles/estabelecimento.dir/src/app.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/estabelecimento.dir/src/app.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/app.cpp" -o CMakeFiles/estabelecimento.dir/src/app.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/src/app.cpp" -o CMakeFiles/estabelecimento.dir/src/app.cpp.s
 
 CMakeFiles/estabelecimento.dir/src/cliente.cpp.o: CMakeFiles/estabelecimento.dir/flags.make
 CMakeFiles/estabelecimento.dir/src/cliente.cpp.o: ../src/cliente.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/estabelecimento.dir/src/cliente.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/estabelecimento.dir/src/cliente.cpp.o -c "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/cliente.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/estabelecimento.dir/src/cliente.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/estabelecimento.dir/src/cliente.cpp.o -c "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/src/cliente.cpp"
 
 CMakeFiles/estabelecimento.dir/src/cliente.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/estabelecimento.dir/src/cliente.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/cliente.cpp" > CMakeFiles/estabelecimento.dir/src/cliente.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/src/cliente.cpp" > CMakeFiles/estabelecimento.dir/src/cliente.cpp.i
 
 CMakeFiles/estabelecimento.dir/src/cliente.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/estabelecimento.dir/src/cliente.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/cliente.cpp" -o CMakeFiles/estabelecimento.dir/src/cliente.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/src/cliente.cpp" -o CMakeFiles/estabelecimento.dir/src/cliente.cpp.s
 
 CMakeFiles/estabelecimento.dir/src/estabelecimento.cpp.o: CMakeFiles/estabelecimento.dir/flags.make
 CMakeFiles/estabelecimento.dir/src/estabelecimento.cpp.o: ../src/estabelecimento.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/estabelecimento.dir/src/estabelecimento.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/estabelecimento.dir/src/estabelecimento.cpp.o -c "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/estabelecimento.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/estabelecimento.dir/src/estabelecimento.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/estabelecimento.dir/src/estabelecimento.cpp.o -c "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/src/estabelecimento.cpp"
 
 CMakeFiles/estabelecimento.dir/src/estabelecimento.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/estabelecimento.dir/src/estabelecimento.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/estabelecimento.cpp" > CMakeFiles/estabelecimento.dir/src/estabelecimento.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/src/estabelecimento.cpp" > CMakeFiles/estabelecimento.dir/src/estabelecimento.cpp.i
 
 CMakeFiles/estabelecimento.dir/src/estabelecimento.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/estabelecimento.dir/src/estabelecimento.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/estabelecimento.cpp" -o CMakeFiles/estabelecimento.dir/src/estabelecimento.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/src/estabelecimento.cpp" -o CMakeFiles/estabelecimento.dir/src/estabelecimento.cpp.s
 
 CMakeFiles/estabelecimento.dir/src/restaurante.cpp.o: CMakeFiles/estabelecimento.dir/flags.make
 CMakeFiles/estabelecimento.dir/src/restaurante.cpp.o: ../src/restaurante.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/estabelecimento.dir/src/restaurante.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/estabelecimento.dir/src/restaurante.cpp.o -c "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/restaurante.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/estabelecimento.dir/src/restaurante.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/estabelecimento.dir/src/restaurante.cpp.o -c "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/src/restaurante.cpp"
 
 CMakeFiles/estabelecimento.dir/src/restaurante.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/estabelecimento.dir/src/restaurante.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/restaurante.cpp" > CMakeFiles/estabelecimento.dir/src/restaurante.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/src/restaurante.cpp" > CMakeFiles/estabelecimento.dir/src/restaurante.cpp.i
 
 CMakeFiles/estabelecimento.dir/src/restaurante.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/estabelecimento.dir/src/restaurante.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/restaurante.cpp" -o CMakeFiles/estabelecimento.dir/src/restaurante.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/src/restaurante.cpp" -o CMakeFiles/estabelecimento.dir/src/restaurante.cpp.s
 
 CMakeFiles/estabelecimento.dir/src/supermercado.cpp.o: CMakeFiles/estabelecimento.dir/flags.make
 CMakeFiles/estabelecimento.dir/src/supermercado.cpp.o: ../src/supermercado.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/estabelecimento.dir/src/supermercado.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/estabelecimento.dir/src/supermercado.cpp.o -c "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/supermercado.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/estabelecimento.dir/src/supermercado.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/estabelecimento.dir/src/supermercado.cpp.o -c "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/src/supermercado.cpp"
 
 CMakeFiles/estabelecimento.dir/src/supermercado.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/estabelecimento.dir/src/supermercado.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/supermercado.cpp" > CMakeFiles/estabelecimento.dir/src/supermercado.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/src/supermercado.cpp" > CMakeFiles/estabelecimento.dir/src/supermercado.cpp.i
 
 CMakeFiles/estabelecimento.dir/src/supermercado.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/estabelecimento.dir/src/supermercado.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/supermercado.cpp" -o CMakeFiles/estabelecimento.dir/src/supermercado.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/src/supermercado.cpp" -o CMakeFiles/estabelecimento.dir/src/supermercado.cpp.s
 
 CMakeFiles/estabelecimento.dir/src/produto.cpp.o: CMakeFiles/estabelecimento.dir/flags.make
 CMakeFiles/estabelecimento.dir/src/produto.cpp.o: ../src/produto.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/estabelecimento.dir/src/produto.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/estabelecimento.dir/src/produto.cpp.o -c "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/produto.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/estabelecimento.dir/src/produto.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/estabelecimento.dir/src/produto.cpp.o -c "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/src/produto.cpp"
 
 CMakeFiles/estabelecimento.dir/src/produto.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/estabelecimento.dir/src/produto.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/produto.cpp" > CMakeFiles/estabelecimento.dir/src/produto.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/src/produto.cpp" > CMakeFiles/estabelecimento.dir/src/produto.cpp.i
 
 CMakeFiles/estabelecimento.dir/src/produto.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/estabelecimento.dir/src/produto.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/produto.cpp" -o CMakeFiles/estabelecimento.dir/src/produto.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/src/produto.cpp" -o CMakeFiles/estabelecimento.dir/src/produto.cpp.s
 
 CMakeFiles/estabelecimento.dir/src/fornecedor.cpp.o: CMakeFiles/estabelecimento.dir/flags.make
 CMakeFiles/estabelecimento.dir/src/fornecedor.cpp.o: ../src/fornecedor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/estabelecimento.dir/src/fornecedor.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/estabelecimento.dir/src/fornecedor.cpp.o -c "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/fornecedor.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/estabelecimento.dir/src/fornecedor.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/estabelecimento.dir/src/fornecedor.cpp.o -c "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/src/fornecedor.cpp"
 
 CMakeFiles/estabelecimento.dir/src/fornecedor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/estabelecimento.dir/src/fornecedor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/fornecedor.cpp" > CMakeFiles/estabelecimento.dir/src/fornecedor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/src/fornecedor.cpp" > CMakeFiles/estabelecimento.dir/src/fornecedor.cpp.i
 
 CMakeFiles/estabelecimento.dir/src/fornecedor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/estabelecimento.dir/src/fornecedor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/src/fornecedor.cpp" -o CMakeFiles/estabelecimento.dir/src/fornecedor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/src/fornecedor.cpp" -o CMakeFiles/estabelecimento.dir/src/fornecedor.cpp.s
 
 # Object files for target estabelecimento
 estabelecimento_OBJECTS = \
@@ -185,7 +185,7 @@ estabelecimento: CMakeFiles/estabelecimento.dir/src/produto.cpp.o
 estabelecimento: CMakeFiles/estabelecimento.dir/src/fornecedor.cpp.o
 estabelecimento: CMakeFiles/estabelecimento.dir/build.make
 estabelecimento: CMakeFiles/estabelecimento.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable estabelecimento"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable estabelecimento"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/estabelecimento.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -198,6 +198,6 @@ CMakeFiles/estabelecimento.dir/clean:
 .PHONY : CMakeFiles/estabelecimento.dir/clean
 
 CMakeFiles/estabelecimento.dir/depend:
-	cd "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado" "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado" "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/build" "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/build" "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/build/CMakeFiles/estabelecimento.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento" "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento" "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/build" "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/build" "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/build/CMakeFiles/estabelecimento.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/estabelecimento.dir/depend
 

@@ -14,6 +14,7 @@ using namespace std;
 fornecedor::fornecedor(string filename): filename(filename)
 {
     addAll();
+    listarProdutos();
 }
 
 fornecedor::~fornecedor()
@@ -87,7 +88,7 @@ void fornecedor::addAll()
     arquivo.open(filename);
     if (!arquivo.is_open())
     {
-        cerr << "Arquivo não existente ou sem permissão";
+        cerr << "Arquivo não existente ou sem permissão FORNECEDOR";
     }
     produto p;
     string msg, quantidade;

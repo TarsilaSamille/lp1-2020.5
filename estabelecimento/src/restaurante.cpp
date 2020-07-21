@@ -58,7 +58,7 @@ void restaurante::addAll()
   arquivo.open(cardapio);
   if (!arquivo.is_open())
   {
-    cerr << "Arquivo não existente ou sem permissão";
+    cerr << "Arquivo não existente ou sem permissão CARDAPIO";
   }
   produto p;
 

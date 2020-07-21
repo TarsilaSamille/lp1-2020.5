@@ -17,7 +17,7 @@ class app{
     app(string cardapio, string caixa);
     ~app();
 
-    int runSupermercado(int argc, char* argv[]);
-    int runRestaurante(int argc, char* argv[]);
+    int runSupermercado();
+    int runRestaurante();
 };
 #endif

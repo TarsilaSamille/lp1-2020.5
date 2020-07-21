@@ -27,7 +27,7 @@ app::~app()
 {
 }
 
-int app::runSupermercado(int argc, char *argv[])
+int app::runSupermercado()
 {
         string nome, saldo, cod, quantidade;
         cout << "cliente\nnome:";
@@ -114,10 +114,10 @@ int app::runSupermercado(int argc, char *argv[])
         cout << "inicializar novo cliente? (s/N):\n";
         getline(cin, opt);
         if (opt == "S" || opt == "s")
-            runSupermercado(argc,argv);
+            runSupermercado();
     return 1;
 }
-int app::runRestaurante(int argc, char *argv[])
+int app::runRestaurante()
  {
 //     if (argc == 1)
 //     {

@@ -6,5 +6,5 @@ CXX_FLAGS = -Wall   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/include" 
+CXX_INCLUDES = -I"/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/include" 
 

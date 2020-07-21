@@ -1,4 +1,4 @@
-# Install script for directory: /home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado
+# Install script for directory: /home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/supemercado/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
