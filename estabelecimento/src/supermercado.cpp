@@ -1,4 +1,5 @@
 #include "../include/supermercado.hpp"
+#include "../include/estabelecimento.hpp"
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -7,11 +8,9 @@
 using namespace std;
 
 supermercado::supermercado(string estoque, string caixa, string fornecedorF)
- : estabelecimento(caixa), fornecedorS(fornecedorF), estoque(estoque)
+ : estoque(estoque), estabelecimento(caixa), fornecedorS(fornecedorF)
 {
   addAll();
-  cout<<"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
-  listar();
 }
 supermercado::supermercado(string caixa, string fornecedorF) : estabelecimento(caixa), fornecedorS(fornecedorF)
 {

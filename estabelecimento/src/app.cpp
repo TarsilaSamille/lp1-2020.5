@@ -15,7 +15,6 @@ using namespace std;
 app::app(string estoque, string caixa, string fornecedorFilename)
     : supermercadoE(estoque, caixa, fornecedorFilename), restauranteE(caixa)
 {
-    cout << "ate aqui" <<endl;
 }
 
 app::app(string cardapio, string caixa)
