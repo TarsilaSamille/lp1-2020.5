@@ -31,7 +31,7 @@ void restaurante::addAll()
     cerr << "Arquivo não existente ou sem permissão CARDAPIO";
   }
   produto p;
-
+  int i = 0;
   string msg, cod, pr, pc, quantidade;
   while (!arquivo.eof())
   {
@@ -40,9 +40,11 @@ void restaurante::addAll()
     {
       continue;
     }
+    i++;
     vector<string> strings;
     istringstream f(msg);
     string s;
+    cout << msg;
     if (msg.rfind("ITEM", 0) != 0 && msg.rfind(",", 0) != 0)
     {
       while (getline(f, s, ','))
@@ -51,10 +53,22 @@ void restaurante::addAll()
       }
       pr = strings[1];
       p.nome = strings[0];
-      p.quantidadeEstoque = atoi(quantidade.c_str());
+      p.codigo = i;
       p.preco = atof(pr.substr(3, msg.size()).c_str());
+      p.quantidadeEstoque = 1000;
+      cout << p.nome << p.preco << endl;
+
       add(p);
     }
   }
   arquivo.close();
+}
+
+
+void restaurante::listar()
+{
+  for (auto i : produtos)
+  {
+      cout << i.nome << "-R$" << i.preco << "\n";
+  }
 }

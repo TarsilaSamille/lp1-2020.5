@@ -7,11 +7,12 @@
 
 using namespace std;
 
-class appSupermercado{
-    public:
+class appSupermercado
+{
+public:
     supermercado supermercadoE;
 
-    appSupermercado(string estoque,string caixa, string fornecedor);
+    appSupermercado(string estoque, string caixa, string fornecedor);
     ~appSupermercado();
 
     int runSupermercado();

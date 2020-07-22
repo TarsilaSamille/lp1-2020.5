@@ -17,5 +17,6 @@ class restaurante : public estabelecimento {
         void escreverCardapio();
         void addAll();
             void gravar();
+            void listar();
 };
 #endif

@@ -7,8 +7,9 @@
 
 using namespace std;
 
-class appRestaurante{
-    public:
+class appRestaurante
+{
+public:
     restaurante restauranteE;
 
     appRestaurante(string cardapio, string caixa);
