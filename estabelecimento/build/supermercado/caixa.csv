@@ -1,11 +1,11 @@
 CODIGO,PRODUTO,PREÇO,QUANTIDADE VENDIDA,TOTAL
-1,Feijão,R$6.2,8,49.6
-2,Arroz,R$3.4,3,10.2
+1,Feijão,R$6.2,6,37.2
+2,Arroz,R$3.4,4,13.6
 3,Fubá,R$2.9,2,5.8
 4,Milho Verde,R$1.3,2,2.6
 10,Macaxeira,R$4.5,3,13.5
 14,Carne,R$24.92,3,74.76
-15,Salsicha,R$8.49,2,16.98
-16,Peixe,R$12.45,1,12.45
-17,Margarina,R$2.99,1,2.99
-,,,TOTAL GERAL:,R$188.88
+15,Salsicha,R$8.49,1,8.49
+16,Peixe,R$12.45,2,24.9
+17,Margarina,R$2.99,2,5.98
+,,,TOTAL GERAL:,R$186.839

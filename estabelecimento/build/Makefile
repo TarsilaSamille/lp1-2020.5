@@ -123,32 +123,59 @@ estabelecimento/fast:
 	$(MAKE) -f CMakeFiles/estabelecimento.dir/build.make CMakeFiles/estabelecimento.dir/build
 .PHONY : estabelecimento/fast
 
-src/app.o: src/app.cpp.o
+src/appRestaurante.o: src/appRestaurante.cpp.o
 
-.PHONY : src/app.o
+.PHONY : src/appRestaurante.o
 
 # target to build an object file
-src/app.cpp.o:
-	$(MAKE) -f CMakeFiles/estabelecimento.dir/build.make CMakeFiles/estabelecimento.dir/src/app.cpp.o
-.PHONY : src/app.cpp.o
+src/appRestaurante.cpp.o:
+	$(MAKE) -f CMakeFiles/estabelecimento.dir/build.make CMakeFiles/estabelecimento.dir/src/appRestaurante.cpp.o
+.PHONY : src/appRestaurante.cpp.o
 
-src/app.i: src/app.cpp.i
+src/appRestaurante.i: src/appRestaurante.cpp.i
 
-.PHONY : src/app.i
+.PHONY : src/appRestaurante.i
 
 # target to preprocess a source file
-src/app.cpp.i:
-	$(MAKE) -f CMakeFiles/estabelecimento.dir/build.make CMakeFiles/estabelecimento.dir/src/app.cpp.i
-.PHONY : src/app.cpp.i
+src/appRestaurante.cpp.i:
+	$(MAKE) -f CMakeFiles/estabelecimento.dir/build.make CMakeFiles/estabelecimento.dir/src/appRestaurante.cpp.i
+.PHONY : src/appRestaurante.cpp.i
 
-src/app.s: src/app.cpp.s
+src/appRestaurante.s: src/appRestaurante.cpp.s
 
-.PHONY : src/app.s
+.PHONY : src/appRestaurante.s
 
 # target to generate assembly for a file
-src/app.cpp.s:
-	$(MAKE) -f CMakeFiles/estabelecimento.dir/build.make CMakeFiles/estabelecimento.dir/src/app.cpp.s
-.PHONY : src/app.cpp.s
+src/appRestaurante.cpp.s:
+	$(MAKE) -f CMakeFiles/estabelecimento.dir/build.make CMakeFiles/estabelecimento.dir/src/appRestaurante.cpp.s
+.PHONY : src/appRestaurante.cpp.s
+
+src/appSupermercado.o: src/appSupermercado.cpp.o
+
+.PHONY : src/appSupermercado.o
+
+# target to build an object file
+src/appSupermercado.cpp.o:
+	$(MAKE) -f CMakeFiles/estabelecimento.dir/build.make CMakeFiles/estabelecimento.dir/src/appSupermercado.cpp.o
+.PHONY : src/appSupermercado.cpp.o
+
+src/appSupermercado.i: src/appSupermercado.cpp.i
+
+.PHONY : src/appSupermercado.i
+
+# target to preprocess a source file
+src/appSupermercado.cpp.i:
+	$(MAKE) -f CMakeFiles/estabelecimento.dir/build.make CMakeFiles/estabelecimento.dir/src/appSupermercado.cpp.i
+.PHONY : src/appSupermercado.cpp.i
+
+src/appSupermercado.s: src/appSupermercado.cpp.s
+
+.PHONY : src/appSupermercado.s
+
+# target to generate assembly for a file
+src/appSupermercado.cpp.s:
+	$(MAKE) -f CMakeFiles/estabelecimento.dir/build.make CMakeFiles/estabelecimento.dir/src/appSupermercado.cpp.s
+.PHONY : src/appSupermercado.cpp.s
 
 src/cliente.o: src/cliente.cpp.o
 
@@ -348,9 +375,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... estabelecimento"
-	@echo "... src/app.o"
-	@echo "... src/app.i"
-	@echo "... src/app.s"
+	@echo "... src/appRestaurante.o"
+	@echo "... src/appRestaurante.i"
+	@echo "... src/appRestaurante.s"
+	@echo "... src/appSupermercado.o"
+	@echo "... src/appSupermercado.i"
+	@echo "... src/appSupermercado.s"
 	@echo "... src/cliente.o"
 	@echo "... src/cliente.i"
 	@echo "... src/cliente.s"

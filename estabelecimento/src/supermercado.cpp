@@ -31,7 +31,7 @@ void supermercado::escreverEstoque()
   arquivo.open(estoque);
   if (!arquivo.is_open())
   {
-    cerr << "Arquivo não existente ou sem permissão de leitura.";
+    cerr << "Arquivo não existente ou sem permissão de leitura. 2";
   }
 
   arquivo << "COD,PRODUTO,UNIDADE DE MEDIDA,PREÇO,QUANTIDADE" << endl;

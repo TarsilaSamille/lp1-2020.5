@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/agencia.hpp
+string
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/app.hpp
+banco.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/banco.hpp
+string
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/banco.hpp
+vector
+-
+conta.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/conta.hpp
+
 /home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/cliente.hpp
 string
 -
@@ -22,7 +38,25 @@ cliente.hpp
 string
 -
 
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/conta.hpp
+string
+-
+iostream
+-
+cstdlib
+-
+agencia.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/agencia.hpp
+cliente.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/cliente.hpp
+
 /home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/fila.hpp
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/src/clientePJ.cpp
+../include/clientePJ.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/clientePJ.hpp
+iostream
+-
 
 /home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/src/fila.cpp
 ../include/fila.hpp
@@ -33,6 +67,18 @@ string
 -
 ../include/cliente.hpp
 /home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/cliente.hpp
+../include/clientePJ.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/clientePJ.hpp
+../include/clientePF.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/clientePF.hpp
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/src/main.cpp
+iostream
+-
+../include/app.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/app.hpp
+../include/fila.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/fila.hpp
 ../include/clientePJ.hpp
 /home/tarsila/Área de Trabalho/LP/lp1-2020.5/aula18/include/clientePJ.hpp
 ../include/clientePF.hpp

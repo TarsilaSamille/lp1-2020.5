@@ -128,7 +128,7 @@ void estabelecimento::escrever(produto p)
   arquivo.open(caixa);
   if (!arquivo.is_open())
   {
-    cerr << "Arquivo não existente ou sem permissão de leitura.";
+    cerr << "Arquivo não existente ou sem permissão de leitura. 1";
   }
 
   arquivo << "CODIGO,PRODUTO,PREÇO,QUANTIDADE VENDIDA,TOTAL\n";

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/estabelecimento.dir/src/app.cpp.o"
+  "CMakeFiles/estabelecimento.dir/src/appRestaurante.cpp.o"
+  "CMakeFiles/estabelecimento.dir/src/appSupermercado.cpp.o"
   "CMakeFiles/estabelecimento.dir/src/cliente.cpp.o"
   "CMakeFiles/estabelecimento.dir/src/estabelecimento.cpp.o"
   "CMakeFiles/estabelecimento.dir/src/fornecedor.cpp.o"

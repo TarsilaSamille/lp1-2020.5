@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/include/appRestaurante.hpp
+restaurante.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/include/restaurante.hpp
+fornecedor.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/include/fornecedor.hpp
+string
+-
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/include/appSupermercado.hpp
+supermercado.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/include/supermercado.hpp
+fornecedor.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/include/fornecedor.hpp
+string
+-
+
 /home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/include/cliente.hpp
 produto.hpp
 /home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/include/produto.hpp
@@ -38,29 +54,29 @@ string
 string
 -
 
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/include/restaurante.hpp
+string
+-
+estabelecimento.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/include/estabelecimento.hpp
+
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/include/supermercado.hpp
+string
+-
+estabelecimento.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/include/estabelecimento.hpp
+fornecedor.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/include/fornecedor.hpp
+
 /home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/include/vector_supemercado.hpp
 iostream
 -
 vector
 -
 
-/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/src/fornecedor.cpp
-../include/fornecedor.hpp
-/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/include/fornecedor.hpp
-../include/produto.hpp
-/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/include/produto.hpp
-iostream
--
-fstream
--
-sstream
--
-algorithm
--
-iomanip
--
-cstring
--
-regex
--
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/src/main.cpp
+../include/appRestaurante.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/include/appRestaurante.hpp
+../include/appSupermercado.hpp
+/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/include/appSupermercado.hpp
 

@@ -55,7 +55,7 @@ void cliente::escrever(string filename)
   file.open(filename);
   if (!file.is_open())
   {
-    cerr << "Arquivo não existente ou sem permissão de leitura.";
+    cerr << "Arquivo não existente ou sem permissão de leitura. 3";
   }
     double total =0;
     for (auto i : sacola)

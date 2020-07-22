@@ -11,14 +11,16 @@ include_directories( include )
 # define the sources for the project
 add_executable( estabelecimento
                 src/main.cpp
-                src/app.cpp
                 src/cliente.cpp
                 src/estabelecimento.cpp
                 src/restaurante.cpp
                 src/supermercado.cpp
                 src/produto.cpp
                 src/fornecedor.cpp
-                include/app.hpp
+                src/appSupermercado.cpp
+                src/appRestaurante.cpp
+                include/appSupermercado.hpp
+                include/appRestaurante.hpp
                 include/cliente.hpp
                 include/estabelecimento.hpp
                 include/restaurante.hpp
