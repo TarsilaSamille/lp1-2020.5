@@ -1,5 +1,6 @@
 #include "../include/fornecedor.hpp"
 #include "../include/produto.hpp"
+#include "../include/exceptions.hpp"
 
 #include <iostream>
 #include <fstream>
@@ -24,11 +25,17 @@ fornecedor::~fornecedor()
 void fornecedor::escreverEstoque()
 {
     fstream arquivo;
+    exceptions e;
     arquivo.open(filename);
+    try{
     if (!arquivo.is_open())
-    {
+    {   //num. inteiro qualquer, a ser tratado pelo catch de int e exibir a mensagem de insucesso na abertura do arquivo
+        throw(15);
     }
-
+  }
+  catch(int){
+      e.erroArquivo();
+  }
     arquivo << "PRODUTO,QUANTIDADE" << endl;
     for (auto produto : produtos.getElements())
     {

@@ -44,7 +44,6 @@ void restaurante::addAll()
     vector<string> strings;
     istringstream f(msg);
     string s;
-    cout << msg;
     if (msg.rfind("ITEM", 0) != 0 && msg.rfind(",", 0) != 0)
     {
       while (getline(f, s, ','))
@@ -56,8 +55,6 @@ void restaurante::addAll()
       p.codigo = i;
       p.preco = atof(pr.substr(3, msg.size()).c_str());
       p.quantidadeEstoque = 1000;
-      cout << p.nome << p.preco << endl;
-
       add(p);
     }
   }

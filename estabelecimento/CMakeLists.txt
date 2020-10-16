@@ -19,6 +19,7 @@ add_executable( estabelecimento
                 src/fornecedor.cpp
                 src/appSupermercado.cpp
                 src/appRestaurante.cpp
+                src/exceptions.cpp
                 include/appSupermercado.hpp
                 include/appRestaurante.hpp
                 include/cliente.hpp
@@ -27,7 +28,8 @@ add_executable( estabelecimento
                 include/supermercado.hpp
                 include/produto.hpp
                 include/fornecedor.hpp
-                include/vector_supemercado.hpp)
+                include/vector_supemercado.hpp
+                include/exceptions.hpp)
 
 # define C++11 standard
 set_property(TARGET estabelecimento PROPERTY CXX_STANDARD 11)

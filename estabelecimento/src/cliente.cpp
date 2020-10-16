@@ -1,5 +1,6 @@
 #include "../include/cliente.hpp"
 #include "../include/produto.hpp"
+#include "../include/exceptions.hpp"
 
 #include <iostream>
 #include <fstream>
@@ -51,10 +52,17 @@ void cliente::registro()
 
 void cliente::escrever(string filename)
 {
+  exceptions e;  
   ofstream file;
   file.open(filename);
-  if (!file.is_open())
-  {
+  try{
+    if (!file.is_open())
+    {   //num. inteiro qualquer, a ser tratado pelo catch de int e exibir a mensagem de insucesso na abertura do arquivo
+        //throw(15);
+    }
+  }
+  catch(int){
+      e.erroArquivo();
   }
     double total =0;
     for (auto i : sacola)

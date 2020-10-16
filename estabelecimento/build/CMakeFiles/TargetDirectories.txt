@@ -1,3 +1,0 @@
-/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/build/CMakeFiles/edit_cache.dir
-/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/build/CMakeFiles/rebuild_cache.dir
-/home/tarsila/Área de Trabalho/LP/lp1-2020.5/estabelecimento/build/CMakeFiles/estabelecimento.dir

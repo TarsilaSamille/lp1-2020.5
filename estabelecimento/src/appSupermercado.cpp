@@ -9,6 +9,7 @@
 #include "../include/appSupermercado.hpp"
 #include "../include/fornecedor.hpp"
 #include "../include/cliente.hpp"
+#include "../include/exceptions.hpp"
 
 using namespace std;
 
@@ -23,22 +24,27 @@ appSupermercado::~appSupermercado()
 
 int appSupermercado::runSupermercado()
 {
-        string nome, saldo, cod, quantidade;
-        cout << "cliente\nnome:";
-        getline(cin, nome);
-        cout << "saldo:";
-        getline(cin, saldo);
-        cliente c(nome, atol(saldo.c_str()));
-        string opt = "1";
+    string nome, saldo, cod, quantidade;
+    cout << "cliente\nnome:";
+    getline(cin, nome);
+    exceptions e;
+    e.setTipoEstabelecimento("supermercado");
+    cout << "saldo:";
+    getline(cin, saldo);
+    cliente c(nome, atol(saldo.c_str()));
+    string opt = "1";
+    try{
+        //descomentar para testar o catch de erro genérico
+        //throw (15);
         while (opt != "0")
         {
-            cout << "Supermercado 1.0\n";
+            cout << "Supermercado 2.0\n";
             cout << "Selecione uma ação:\n";
             cout << "1) Listar produtos supemercado\n";
             cout << "2) Adicionar produto a sacola\n";
             cout << "3) Listar produtos sacola\n";
             cout << "4) Listar produtos fornecedor\n";
-            cout << "5) Reabasticer o estoque do estabelecimento\n";
+            cout << "5) Reabastecer o estoque do estabelecimento\n";
             cout << "6) Adicionar saldo\n";
             cout << "7) Ver saldo\n";
             cout << "0) Finalizar\n";
@@ -59,9 +65,19 @@ int appSupermercado::runSupermercado()
 
                 for (auto nome : nomes)
                 {
-                    produto ptr = supermercadoE.venda(nome);
-                    if (ptr.nome != "")
-                        c.compra(ptr);
+                    try{           
+                        produto ptr = supermercadoE.venda(nome);
+                        if (ptr.nome != ""){
+                            c.compra(ptr);
+                        }else{
+                            //caso o nome seja vazio
+                            string vazio = "o nome do produto é vazio";
+                            throw (string(vazio));
+                        }
+                    }
+                    catch (string s){
+                        cerr <<"Erro: "<< s << endl;
+                    }
                 }
             }
             else if (opt == "1")
@@ -105,9 +121,16 @@ int appSupermercado::runSupermercado()
                 cout << "invalido\n";
             }
         }
-        cout << "inicializar novo cliente? (s/N):\n";
-        getline(cin, opt);
-        if (opt == "S" || opt == "s")
-            runSupermercado();
+    }
+    catch (bad_alloc E){   
+        cout << "Problemas com alocação de memória\n" << endl;     
+    }
+    catch(...){
+        e.erroInesperado();
+    }
+    cout << "inicializar novo cliente? (s/N):\n";
+    getline(cin, opt);
+    if (opt == "S" || opt == "s")
+        runSupermercado();
     return 1;
 }
